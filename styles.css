@@ -101,6 +101,9 @@ main {
     color: var(--color-yellow);
 }
 
+.card h4 {
+    color: var(--color-purple);
+}
 
 .card {
     background-color: var(--color-white);

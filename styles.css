@@ -105,13 +105,142 @@ main {
     color: var(--color-purple);
 }
 
-.card {
-    background-color: var(--color-white);
-    padding: 1em;
-    margin: 1em 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+/* Wrapper with red background */
+.why-choose-wrapper {
+  background-color: var(--color-pink); /* Red-pink background */
+  padding: 1.5rem 1rem;
+  border-radius: 0;
+  color: var(--color-white);
 }
+
+/* Heading */
+.why-choose-wrapper h2 {
+  font-family: var(--font-heading);
+  font-size: var(--h2-size);
+  margin-bottom: 1rem;
+}
+
+/* Grid layout */
+.why-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Cards */
+.why-us div {
+  padding: 1.25rem;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Color classes for the blocks */
+.why-us .teal {
+  background-color: var(--color-teal);
+  color: black;
+}
+
+.why-us .lavender {
+  background-color: var(--color-lavender);
+  color: black;
+}
+
+.why-us .yellow {
+  background-color: var(--color-yellow);
+  color: black;
+}
+
+.why-us .white {
+  background-color: var(--color-white);
+  color: black;
+}
+.pricing h3 {
+  color: var(--color-yellow);
+  font-size: var(--h3-size);
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Add spacing around each table */
+.pricing table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  background-color: var(--color-yellow);
+}
+
+/* Table header row */
+.pricing th {
+  background-color: var(--color-yellow);
+  color: var(--color-dark-gray);
+  padding: 0.75rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Table data rows */
+.pricing td {
+  background-color: var(--color-white);
+}
+
+th, td {
+    border: 1px solid var(--color-yellow);
+    padding: 0.75em;
+    text-align: left;
+}
+
+.cta {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Heading */
+.cta h2 {
+  font-family: var(--font-heading);
+  font-size: var(--h3-size);
+  margin-bottom: 1rem;
+}
+
+/* Paragraph */
+.cta p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-body);
+}
+
+/* Button */
+.cta button {
+  background-color: var(--color-white);
+  color: var(--color-dark-gray);
+  font-family: var(--font-body);
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 2px 4px 0 var(--color-dark-gray); /* Mimic shadow */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cta button:hover {
+  transform: translateY(2px);
+  box-shadow: 1px 2px 0 var(--color-dark-gray);
+}
+
+
+
 
 img {
     width: 40px;
@@ -120,24 +249,20 @@ img {
 }
 
 button {
-    background-color: var(--color-pink);
-    color: var(--color-white);
+    background-color: var(--color-white);
+    color: var(--color-dark-gray);
     border: none;
     border-radius: 8px;
     padding: 0.75em 1.5em;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: inset;
 }
 
 button:hover {
     background-color: #c3405c;
 }
 
-th, td {
-    border: 1px solid #ccc;
-    padding: 0.75em;
-    text-align: left;
-}
 
 footer {
     background-color: var(--color-purple);

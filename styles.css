@@ -1,0 +1,16 @@
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* Typography */
+h1, h2 {
+    font-family: 'Kavoon', cursive;
+}
+
+body, p, h3, h4, h5, a, button, table {
+    font-family: 'Inter', sans-serif;
+    color: #1E1E1E;
+    background-color: #6B8FE7;
+    margin: 0;
+    padding: 0;
+}

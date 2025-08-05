@@ -1,6 +1,126 @@
 
+/* CSS BY Katherine Lozano */
+
+/* CTA Section */
+section.cta {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+section.cta h2 {
+  font-family: var(--font-heading);
+  font-size: var(--h3-size);
+  margin-bottom: 1rem;
+}
+
+section.cta p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-body);
+}
+
+section.cta button {
+  background-color: var(--color-white);
+  color: var(--color-dark-gray);
+  font-family: var(--font-body);
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 2px 4px 0 var(--color-dark-gray);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+section.cta button:hover {
+  transform: translateY(2px);
+  box-shadow: 1px 2px 0 var(--color-dark-gray);
+}
+
+/* Why Choose Us */
+.why-choose-wrapper {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.why-choose-wrapper h3 {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.why-choose-wrapper .teal {
+  background-color: var(--color-teal);
+  color: black;
+}
+
+.why-choose-wrapper .lavender {
+  background-color: var(--color-lavender);
+  color: black;
+}
+
+.why-choose-wrapper .yellow {
+  background-color: var(--color-yellow);
+  color: black;
+}
+
+.why-choose-wrapper .white {
+  background-color: var(--color-white);
+  color: black;
+}
+
+/* Pricing Tables */
+section.pricing h3 {
+  color: var(--color-yellow);
+  font-size: var(--h3-size);
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+section.pricing table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+section.pricing th {
+  background-color: var(--color-yellow);
+  color: var(--color-dark-gray);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+section.pricing td {
+  background-color: var(--color-white);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+section.pricing th, section.pricing td {
+  border: 1px solid var(--color-yellow);
+}
+
+
 /* IMPORTED FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,400;1,100;1,400&family=Kavoon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap");
+
+
+/* CSS REST */
+
 
 /* ROOT VARIABLES */
 :root {
@@ -22,283 +142,109 @@
   --nav-h2-size: 1.5em;
 }
 
+
 /* GLOBAL STYLES (mobile first/small) */
-header {
-    text-align: center;
-    padding: 1rem;
-    color: var(--color-white);
-}
-
 body {
-    background-color: var(--color-purple);
-    font-family: var(--font-body);
-
+  background-color: var(--color-purple);
+  font-family: var(--font-body);
+  max-width: 450px; /* Mobile Only */
+  margin: 0 auto;
 }
 
-h1, h2 {
-    font-family: var(--font-heading);
+header {
+  text-align: center;
+  padding: 1rem;
+  color: var(--color-white);
 }
 
 h1 {
-    font-size: var(--h1-size);
+  font-size: var(--h1-size);
+  font-family: var(--font-heading);
 }
 
 h2 {
-    font-size: var(--h2-size);
+  font-size: var(--h2-size);
+  font-family: var(--font-heading);
 }
 
 h3 {
-    font-size: var(--h3-size);
+  font-size: var(--h3-size);
+  font-family: var(--font-body);
 }
 
 h4 {
-    font-size: var(--h4-size);
+  font-size: var(--h4-size);
+  font-family: var(--font-body);
 }
 
 nav {
-    background-color: var(--color-yellow);
-    text-align: center;
-    padding: 1rem;
+  background-color: var(--color-yellow);
+  text-align: center;
+  padding: 1rem;
 }
 
 nav h2 {
-    font-size: var(--nav-h2-size);
-    color: black;
-    font-family: var(--font-body);
-    font-style: italic;
+  font-size: var(--nav-h2-size);
+  color: black;
+  font-family: var(--font-body);
+  font-style: italic;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav a {
-    color: var(--color-lavender);
-    text-decoration: none;
-    font-weight: bold;
-    background-color: var(--color-white);
-    display: block;
-    padding: 0.75rem;
-    font-weight: bold;
-    text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav li {
-    margin-bottom: 0.5rem;
-}
-
-main {
-    padding: 1rem;
-}
-
-
-img {
-    width: 150px;
-    height: auto;
-}
-
-.services h2 {
-    color: var(--color-white);
-}
-
-.services h3 {
-    color: var(--color-yellow);
-}
-
-.card h4 {
-    color: var(--color-purple);
-}
-
-/* Wrapper with red background */
-.why-choose-wrapper {
-  background-color: var(--color-pink); /* Red-pink background */
-  padding: 1.5rem 1rem;
-  border-radius: 0;
-  color: var(--color-white);
-}
-
-/* Heading */
-.why-choose-wrapper h2 {
-  font-family: var(--font-heading);
-  font-size: var(--h2-size);
-  margin-bottom: 1rem;
-}
-
-/* Grid layout */
-.why-us {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-/* Cards */
-.why-us div {
-  padding: 1.25rem;
-  border-radius: 20px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-/* Color classes for the blocks */
-.why-us .teal {
-  background-color: var(--color-teal);
-  color: black;
-}
-
-.why-us .lavender {
-  background-color: var(--color-lavender);
-  color: black;
-}
-
-.why-us .yellow {
-  background-color: var(--color-yellow);
-  color: black;
-}
-
-.why-us .white {
-  background-color: var(--color-white);
-  color: black;
-}
-.pricing h3 {
-  color: var(--color-yellow);
-  font-size: var(--h3-size);
-  font-weight: bold;
-  margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
 
-/* To add spacing around each table */
-.pricing table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 1rem;
-  font-family: var(--font-body);
-  margin-bottom: 1.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  background-color: var(--color-yellow);
-}
-
-/* Table header row */
-.pricing th {
-  background-color: var(--color-yellow);
-  color: var(--color-dark-gray);
+nav a {
+  display: block;
   padding: 0.75rem;
-  font-weight: bold;
-  text-align: left;
-}
-
-/* Table data rows */
-.pricing td {
   background-color: var(--color-white);
+  color: var(--color-lavender);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
 }
 
-th, td {
-    border: 1px solid var(--color-yellow);
-    padding: 0.75em;
-    text-align: left;
+main {
+  padding: 1rem;
 }
 
-.cta {
-    background-color: var(--color-pink);
-    color: var(--color-white);
-    text-align: left;
-    padding: 1rem;
-    
-}
-
-.cta {
-  background-color: var(--color-pink);
+.services h2 {
   color: var(--color-white);
-  padding: 2rem 1rem;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 2rem;
 }
 
-/* CTA Heading */
-.cta h2 {
-  font-family: var(--font-heading);
-  font-size: var(--h3-size);
-  margin-bottom: 1rem;
+.services h3 {
+  color: var(--color-yellow);
 }
 
-/* CTA Paragraph */
-.cta p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  font-family: var(--font-body);
-}
-
-/* Button */
-.cta button {
+section.card {
   background-color: var(--color-white);
-  color: var(--color-dark-gray);
-  font-family: var(--font-body);
-  font-weight: bold;
-  padding: 0.75rem 2rem;
-  border-radius: 12px;
-  border: none;
-  box-shadow: 2px 4px 0 var(--color-dark-gray); /* Mimic shadow */
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.cta button:hover {
-  transform: translateY(2px);
-  box-shadow: 1px 2px 0 var(--color-dark-gray);
+section.card img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 0.5em;
 }
-
-
-.card {
-    background-color: var(--color-white);
-    padding: 1em;
-    margin: 1em 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-
-
-button {
-    background-color: var(--color-white);
-
-    color: var(--color-dark-gray);
-    border: none;
-    border-radius: 8px;
-    padding: 0.75em 1.5em;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-button:hover {
-    background-color: #c3405c;
-}
-
-/* Footer */
 
 footer {
-    background-color: var(--color-purple);
-    color: var(--color-white);
-    text-align: center;
-    padding: 1em;
-    font-size: 0.9em;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
 }
 
 footer a {
-    color: var(--color-white);
-    text-decoration: underline;
-}
-
-/* MEDIA QUERY: Mobile Only (max-width: 450px) */
-@media all and (max-width: 450px) {
-  body {
-    max-width: 100%;
-    margin: 0 auto;
-  }
+  color: var(--color-white);
+  text-decoration: underline;
 }

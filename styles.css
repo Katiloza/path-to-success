@@ -1,6 +1,6 @@
 
 /* IMPORTED FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,400;1,100;1,400&family=Kavoon&display=swap");
 
 /* ROOT VARIABLES */
 :root {
@@ -164,7 +164,7 @@ main {
   margin-bottom: 0.5rem;
 }
 
-/* Add spacing around each table */
+/* To add spacing around each table */
 .pricing table {
   width: 100%;
   border-collapse: collapse;
@@ -196,6 +196,14 @@ th, td {
 }
 
 .cta {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    text-align: left;
+    padding: 1rem;
+    
+}
+
+.cta {
   background-color: var(--color-pink);
   color: var(--color-white);
   padding: 2rem 1rem;
@@ -204,14 +212,14 @@ th, td {
   margin-top: 2rem;
 }
 
-/* Heading */
+/* CTA Heading */
 .cta h2 {
   font-family: var(--font-heading);
   font-size: var(--h3-size);
   margin-bottom: 1rem;
 }
 
-/* Paragraph */
+/* CTA Paragraph */
 .cta p {
   font-size: 0.95rem;
   line-height: 1.6;
@@ -240,7 +248,13 @@ th, td {
 }
 
 
-
+.card {
+    background-color: var(--color-white);
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
 img {
     width: 40px;
@@ -248,21 +262,24 @@ img {
     margin-bottom: 0.5em;
 }
 
+
 button {
     background-color: var(--color-white);
+
     color: var(--color-dark-gray);
     border: none;
     border-radius: 8px;
     padding: 0.75em 1.5em;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: inset;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
     background-color: #c3405c;
 }
 
+/* Footer */
 
 footer {
     background-color: var(--color-purple);

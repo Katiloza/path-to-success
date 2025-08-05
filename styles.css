@@ -2,3 +2,30 @@
 /* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
+/* ROOT VARIABLES */
+:root {
+  --color-teal: #4CA7C0;
+  --color-purple: #484FB7;
+  --color-lavender: #6B8FE7;
+  --color-yellow: #E9BB57;
+  --color-pink: #D9526F;
+  --color-dark-gray: #1E1E1E;
+  --color-white: #ffffff;
+
+  --font-heading: 'Kavoon', cursive;
+  --font-body: 'Inter', sans-serif;
+
+  --h1-size: 3em;
+  --h2-size: 2em;
+  --h3-size: 1.5em;
+  --h4-size: 1.15em;
+  --nav-h2-size: 1.5em;
+}
+
+body {
+
+}
+
+h1 h2 {
+    font-family: var(--font-heading);
+}

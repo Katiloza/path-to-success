@@ -46,38 +46,55 @@ section.cta button:hover {
 /* Why Choose Us */
 .why-choose-wrapper {
   background-color: var(--color-pink);
+  padding: 2rem 1rem;
+  text-align: center;
   color: var(--color-white);
-  padding: 1.5rem 1rem;
+}
+
+.why-choose-wrapper h2 {
+  font-family: var(--font-heading);
+  font-size: var(--h2-size);
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Grid container */
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Grid cards */
+.why-grid div {
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  color: var(--color-dark-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.why-choose-wrapper h3 {
-  padding: 1rem;
-  margin: 0.5rem 0;
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.why-choose-wrapper .teal {
+/* Color classes */
+.teal {
   background-color: var(--color-teal);
-  color: black;
 }
 
-.why-choose-wrapper .lavender {
+.lavender {
   background-color: var(--color-lavender);
-  color: black;
 }
 
-.why-choose-wrapper .yellow {
+.yellow {
   background-color: var(--color-yellow);
-  color: black;
 }
 
-.why-choose-wrapper .white {
+.white {
   background-color: var(--color-white);
-  color: black;
 }
+
 
 /* Pricing Tables */
 section.pricing h3 {
@@ -210,9 +227,6 @@ nav a {
   border-radius: 6px;
 }
 
-main {
-  padding: 1rem;
-}
 
 .services h2 {
   color: var(--color-white);
